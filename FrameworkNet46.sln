@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Core", "Framework.Core\Framework.Core.csproj", "{D3AEEBCE-E31F-42C8-ABC4-7E214DB29209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.DataAccess", "Application.DataAccess\Application.DataAccess.csproj", "{FD1AA225-5948-457E-8347-336407E5841E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.JobServices", "Application.JobServices\Application.JobServices.csproj", "{6492235B-E3CA-4BA9-8106-9730B6EDD4E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Common.ValueObjects", "Application.Common.ValueObjects\Application.Common.ValueObjects.csproj", "{02103FE9-7DE8-42E3-ABC8-2B693D8A97D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.BusinessLogic", "Application.BusinessLogic\Application.BusinessLogic.csproj", "{DD1331CF-3F02-4895-83C2-9CE1757DF82B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_TesterConsoleApp", "_TesterConsoleApp\_TesterConsoleApp.csproj", "{E5CF6C26-6CF0-443E-89DD-E3D4B725655B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3AEEBCE-E31F-42C8-ABC4-7E214DB29209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AEEBCE-E31F-42C8-ABC4-7E214DB29209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AEEBCE-E31F-42C8-ABC4-7E214DB29209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AEEBCE-E31F-42C8-ABC4-7E214DB29209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD1AA225-5948-457E-8347-336407E5841E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1AA225-5948-457E-8347-336407E5841E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1AA225-5948-457E-8347-336407E5841E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1AA225-5948-457E-8347-336407E5841E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6492235B-E3CA-4BA9-8106-9730B6EDD4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6492235B-E3CA-4BA9-8106-9730B6EDD4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6492235B-E3CA-4BA9-8106-9730B6EDD4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6492235B-E3CA-4BA9-8106-9730B6EDD4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02103FE9-7DE8-42E3-ABC8-2B693D8A97D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02103FE9-7DE8-42E3-ABC8-2B693D8A97D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02103FE9-7DE8-42E3-ABC8-2B693D8A97D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02103FE9-7DE8-42E3-ABC8-2B693D8A97D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1331CF-3F02-4895-83C2-9CE1757DF82B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1331CF-3F02-4895-83C2-9CE1757DF82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1331CF-3F02-4895-83C2-9CE1757DF82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1331CF-3F02-4895-83C2-9CE1757DF82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5CF6C26-6CF0-443E-89DD-E3D4B725655B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5CF6C26-6CF0-443E-89DD-E3D4B725655B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5CF6C26-6CF0-443E-89DD-E3D4B725655B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5CF6C26-6CF0-443E-89DD-E3D4B725655B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB466BD9-D04E-41FF-BC18-18D3A046087E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pchenatwork.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Framework.Core\\Framework.Core.csproj
+		SccProjectName1 = Framework.Core
+		SccLocalPath1 = Framework.Core
+		SccProjectUniqueName2 = Application.DataAccess\\Application.DataAccess.csproj
+		SccProjectName2 = Application.DataAccess
+		SccLocalPath2 = Application.DataAccess
+		SccProjectUniqueName3 = Application.JobServices\\Application.JobServices.csproj
+		SccProjectName3 = Application.JobServices
+		SccLocalPath3 = Application.JobServices
+		SccProjectUniqueName4 = Application.Common.ValueObjects\\Application.Common.ValueObjects.csproj
+		SccProjectName4 = Application.Common.ValueObjects
+		SccLocalPath4 = Application.Common.ValueObjects
+		SccProjectUniqueName5 = Application.BusinessLogic\\Application.BusinessLogic.csproj
+		SccProjectName5 = Application.BusinessLogic
+		SccLocalPath5 = Application.BusinessLogic
+		SccProjectUniqueName6 = _TesterConsoleApp\\_TesterConsoleApp.csproj
+		SccProjectName6 = _TesterConsoleApp
+		SccLocalPath6 = _TesterConsoleApp
+	EndGlobalSection
+EndGlobal
