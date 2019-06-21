@@ -30,7 +30,7 @@ namespace Framework.Core.DataAccess
         /// Inject DbConnection to DAO
         /// </summary>
         /// <param name=""></param>
-        protected DaoBase(DataSourceSettingObject dataSource)
+        protected DaoBase(DataSourceParams dataSource)
         {
             _dataSource = new Lazy<IDataSource>(() => new DataSource(dataSource));
         }

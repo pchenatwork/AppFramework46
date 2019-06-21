@@ -23,7 +23,7 @@ namespace Application.BusinessLogic.Supplier
             //string ConnectionString = "server=scazvassqldev01.nycsca.org; user id=aec; password=brApHa7B; database=NYCSCA_VAS; MultipleActiveResultSets=True;";  // SCAZVASSQLDEV01          SCAVASSQLTEST01
             string ConnectionString = "server=scazvassqldev01.nycsca.org; user id=aec; password=brApHa7B; database=NYCSCA_VAS;";
 
-            _DataSource = new DataSourceSettingObject("MySupplier", DbConnectionTypeName, ConnectionString);
+            _DataSource = new DataSourceParams("MySupplier", DbConnectionTypeName, ConnectionString);
             _DaoTypeName = DaoEnum.GetByName(nameof(SupplierLicense)).Description;
 
             /// _DaoTypeName = typeof(SupplierLicenseDao).AssemblyQualifiedName;  // FullName only works when the type is found in either mscorlib.dll or the currently executing assembly.

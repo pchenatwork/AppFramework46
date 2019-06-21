@@ -17,7 +17,7 @@ namespace Framework.Core.DataAccess
         /// </summary>
         /// <param name="job"></param>
         /// <returns></returns>
-        public IRepository<T> GetDao(string DaoTypeName, DataSourceSettingObject dataSource)
+        public IRepository<T> GetDao(string DaoTypeName, DataSourceParams dataSource)
         {
             IRepository<T> _dao = null;
             object[] args = { dataSource };  // For parametered Constructor 

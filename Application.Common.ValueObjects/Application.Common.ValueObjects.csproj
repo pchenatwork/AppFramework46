@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Setting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Supplier\SupplierAddress.cs" />
     <Compile Include="Supplier\SupplierLicense.cs" />

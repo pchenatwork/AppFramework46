@@ -16,7 +16,7 @@ namespace Framework.Core.BusinessLogic
         where TValueObject : IValueObject, new()
     {
         #region Private Variables
-        protected DataSourceSettingObject _DataSource;
+        protected DataSourceParams _DataSource;
         protected string _DaoTypeName;
         private IRepository<TValueObject> _Dao;
         //protected Lazy<IRepository<T>> _Dao;

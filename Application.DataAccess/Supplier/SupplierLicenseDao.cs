@@ -41,7 +41,7 @@ namespace Application.DataAccess.Supplier
         ///	default	constructor	
         ///	inits with default
         ///	</summary>
-        public SupplierLicenseDao(DataSourceSettingObject dataSource) : base(dataSource)
+        public SupplierLicenseDao(DataSourceParams dataSource) : base(dataSource)
         {
         }
 

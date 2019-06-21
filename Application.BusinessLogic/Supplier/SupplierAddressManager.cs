@@ -22,7 +22,7 @@ namespace Application.BusinessLogic.Supplier
             string DbConnectionTypeName = "SqlClient";
             string ConnectionString = "server=scazvassqldev01.nycsca.org; user id=aec; password=brApHa7B; database=NYCSCA_VAS;"; // SCAZVASSQLDEV01          SCAVASSQLTEST01
 
-            _DataSource = new DataSourceSettingObject("MySupplier", DbConnectionTypeName, ConnectionString);
+            _DataSource = new DataSourceParams("MySupplier", DbConnectionTypeName, ConnectionString);
             _DaoTypeName = DaoEnum.GetByName(nameof(SupplierAddress)).Description;
         }
         static SupplierAddressManager()

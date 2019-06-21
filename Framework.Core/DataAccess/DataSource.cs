@@ -7,36 +7,39 @@ using System.Threading.Tasks;
 
 namespace Framework.Core.DataAccess
 {
-    public struct DataSourceSettingObject
+    /// <summary>
+    /// Struct for Data Source Parameters
+    /// </summary>
+    public struct DataSourceParams
     {
         public string Name;
-        public string DbConnectionTypeName;
+        public string DbConnectionType;
         public string ConnectionString;
-        public DataSourceSettingObject(string DataSourceName, string DbConnectionTypeName, string ConnectionString)
+        public DataSourceParams(string DataSourceName, string DbConnectionType, string ConnectionString)
         {
-            this.Name = DataSourceName; this.DbConnectionTypeName = DbConnectionTypeName; this.ConnectionString = ConnectionString;
+            this.Name = DataSourceName; this.DbConnectionType = DbConnectionType; this.ConnectionString = ConnectionString;
         }
     }
 
     public class DataSource : IDataSource
     {
         private Lazy<IDbConnection> _conn;
-        private DataSourceSettingObject _dataSouceSetting;
+        private DataSourceParams _dsParams;
 
         #region constructor
-        public DataSource(DataSourceSettingObject datasource)
+        public DataSource(DataSourceParams dataSourceParams)
         {
-            _dataSouceSetting = datasource;
+            _dsParams = dataSourceParams;
             _conn = new Lazy<IDbConnection>(() =>
             {
                 //////return (IDbConnection)((ICloneable)DbConnectionFactory.Instance.GetConnection(_dataSouceSetting.DbConnectionTypeName)).Clone();
-                return DbConnectionFactory.Instance.GetConnection(_dataSouceSetting.DbConnectionTypeName);
+                return DbConnectionFactory.Instance.GetConnection(_dsParams.DbConnectionType);
             });
         }
         #endregion
 
         #region Properties
-        public string Name { get { return _dataSouceSetting.Name; } } 
+        public string Name { get { return _dsParams.Name; } } 
         public IDbConnection DbConnection
         {
             ////***** Failed thread testing **************
@@ -45,7 +48,7 @@ namespace Framework.Core.DataAccess
                 IDbConnection x = _conn.Value;
                 if (x.ConnectionString.Length == 0)
                 {
-                    x.ConnectionString = _dataSouceSetting.ConnectionString;
+                    x.ConnectionString = _dsParams.ConnectionString;
                 }
                 return x;
             }
